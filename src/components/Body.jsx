@@ -110,7 +110,7 @@ const Body = () => {
                             <div className=" flex relative">
                                 <input value={form.password} onChange={handleChange} className='border border-b-gray-700 bg-amber-50  h-10 rounded-2xl pl-3 w-[43vw] md:w-[33vw] lg:w-[24vw] mt-4' type={hidden ? "password" : "text"} name="password" id="" placeholder='Enter Password'
                                 />
-                                <img className=' h-6  md:h-7 absolute right-3 top-6 cursor-pointer' onClick={showPassword} ref={ref} src='/assests/eye.png' />
+                                <img className=' h-6  md:h-7 absolute right-3 top-6 cursor-pointer' onClick={showPassword} ref={ref} src='../assests/eye.png' />
                             </div>
 
                         </form>
@@ -118,7 +118,7 @@ const Body = () => {
                     <div className="save flex flex-col m-auto cursor-pointer bg-green-400 hover:bg-green-500 rounded-2xl px-3 h-8 items-center mt-5 border-2">
                         <form className='flex justify-center items-center' onClick={savePassword} action="">
                             <input className='border-0 w-20 text-xl cursor-pointer' type="submit" name="" id="" />
-                            <img className='h-5 cursor-pointer ' src='assests/save.png' />
+                            <img className='h-5 cursor-pointer ' src='../assests/save.png' />
                         </form>
                     </div>
                 </div>
@@ -153,8 +153,8 @@ const Body = () => {
                                                 <td className="p-3  border-x border-gray-400"><span>{item.username}</span> <span><img onClick={() => { navigator.clipboard.writeText(item.username); notify1(); }} className='h-5 inline-block cursor-pointer' src='/assests/copy.png' /></span> </td>
                                                 <td className="p-3  border-x border-gray-400">{"*".repeat(item.password.length)}<img onClick={() => { navigator.clipboard.writeText(item.password); notify2(); }} className='h-5 inline-block cursor-pointer' src='/assests/copy.png' /></td>
                                                 <td className="p-5 flex gap-4 items-center justify-center">
-                                                    <img onClick={() => editPass(item.id)} className="h-5 cursor-pointer" src="/assests/edit.png" alt="edit" />
-                                                    <img onClick={() => deletePass(item.id)} className="h-5 cursor-pointer" src="/assests/delete.png" alt="delete" />
+                                                    <img onClick={() => editPass(item.id)} className="h-5 cursor-pointer" src="../assests/edit.png" alt="edit" />
+                                                    <img onClick={() => deletePass(item.id)} className="h-5 cursor-pointer" src="../assests/delete.png" alt="delete" />
                                                 </td>
                                             </tr>
                                         ))}
