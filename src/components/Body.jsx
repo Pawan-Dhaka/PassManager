@@ -159,7 +159,7 @@ const Body = () => {
                                             </tr>
                                         ))}
                                     </tbody>
-                                </table></div>) : (<div className='font-bold text-2xl text-center mt-4'>No Passwords to display.</div>)}
+                                </table></div>) : (<div className='font-bold text-2xl text-center mt-4'>No Passwords to display. <br> Note: This website is in the testing phase. For privacy reasons, passwords are not stored. Please use only dummy credentials.</div>)}
                     </div>
                 </div>
             </div>
