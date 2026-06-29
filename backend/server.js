@@ -9,7 +9,7 @@ dotenv.config()
 // or as an es module:
 // import { MongoClient } from 'mongodb'
 // Connection URL
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb+srv://arisepawan:@Pawan1213@cluster0.o7stngr.mongodb.net/?appName=Cluster0';
 const client = new MongoClient(url);
 // Database Name
 const dbName = 'passop';
@@ -18,7 +18,7 @@ const dbName = 'passop';
 const app = express()
 app.use(bodyParser.json())
 app.use(cors())
-const port = 3000
+
 
 client.connect();
 
@@ -49,6 +49,3 @@ app.delete('/', async (req, res) => {
 })
 
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
